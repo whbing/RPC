@@ -30,8 +30,8 @@ public class RPCClient {
 	 
 	public static void main(String[] args) {
 		HelloService helloService = ProxyFactory.getInstance(HelloService.class);
-		System.out.println("say:"+helloService.sayHello("wbb"));
-		System.out.println("Person:"+helloService.getPerson("wbb"));
+		System.out.println("say:"+helloService.sayHello("whb"));
+		System.out.println("Person:"+helloService.getPerson("whb"));
 
 	}
 }
