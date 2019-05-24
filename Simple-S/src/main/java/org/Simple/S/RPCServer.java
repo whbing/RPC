@@ -77,7 +77,8 @@ public class RPCServer {
 	//通过key去properties文件中取值
 	public static String getPropertyValue(String key) throws IOException {
 		Properties properties = new Properties();
-		FileInputStream in = new FileInputStream("src/main/resources/config.properties");
+		//FileInputStream in = new FileInputStream("src/main/resources/config.properties");
+		InputStream in = RPCServer.class.getClassLoader().getResourceAsStream("config.properties");
 		properties.load(in);
 		in.close();
 		return properties.getProperty(key);
