@@ -12,7 +12,7 @@ public class HelloServiceImpl implements HelloService {
 	public Person getPerson(String name) {
 		Person person = new Person();
 		person.setName(name);
-		person.setAge(20);
+		person.setAge(18);
 		return person;
 	}
 
